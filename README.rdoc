@@ -1,0 +1,24 @@
+= Jira - Simple API wrapper to communicate with Jira
+
+  jira-api gem is a simplified API to communicate with Jira
+
+== Installation
+
+  gem install jira-api
+
+== Usage:
+
+  require 'rubygems'
+  require 'jira-api'
+
+  ENV['JIRA_URL'] = 'http://your.jira.com/'
+  ENV['JIRA_USER_NAME'] = 'jira_user'
+  ENV['JIRA_AUTH_MD5'] = 'md5(user:password)'
+  ENV['JIRA_PROJECT_ID'] = '10001'
+
+  # Create a new jira
+  jira_browse_url = JIRA.create('title', 'description')
+
+== Authors & Contributors
+
+  Casey Manion, author, http://github.com/caseman72
